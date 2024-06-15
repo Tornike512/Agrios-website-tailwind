@@ -1,4 +1,4 @@
-import agriosLogo from "/src/assets/agrios-logo.png";
+import agriosLogo from "/src/assets/agrios-logo.jpg";
 import emailIcon from "/src/assets/email-icon.png";
 import facebookLogo from "/src/assets/facebook-logo.png";
 import instagramLogo from "/src/assets/instagram-logo.png";
@@ -8,26 +8,31 @@ import pinterestLogo from "/src/assets/pinterest-logo.png";
 import twitterLogo from "/src/assets/twitter-logo.png";
 
 export function Header() {
+  const socialMedia = [
+    { src: twitterLogo, alt: "Twitter Logo", id: "twitter" },
+    { src: facebookLogo, alt: "Facebook Logo", id: "facebook" },
+    { src: pinterestLogo, alt: "Pinterest Logo", id: "pinterest" },
+    { src: instagramLogo, alt: "Instagram Logo", id: "instagram" },
+  ];
+
   return (
-    <header>
-      <section>
+    <header className="w-full bg-#ffffff flex items-center justify-center">
+      <section className="w-[75%] max-w-[1200px] flex  items-center justify-between">
         <img src={agriosLogo} alt="Agrios Logo" />
-        <div>
-          <ul>
-            <li>
-              <img src={twitterLogo} alt="Twitter Logo" />
-            </li>
-            <li>
-              <img src={facebookLogo} alt="Facebook Logo" />
-            </li>
-            <li>
-              <img src={pinterestLogo} alt="Pinterest Logo" />
-            </li>
-            <li>
-              <img src={instagramLogo} alt="Instagram Logo" />
-            </li>
-          </ul>
-          <address>
+        <div className="flex">
+          {socialMedia.map((logo) => {
+            return (
+              <ul
+                key={logo.id}
+                className="flex items-center list-none cursor-pointer mr-2.5"
+              >
+                <li className="bg-[#e3e3e3] flex p-[7px] rounded-[100%]">
+                  <img src={logo.src} alt={logo.alt} />
+                </li>
+              </ul>
+            );
+          })}
+          <address className="flex items-center">
             <div>
               <img src={phoneIcon} alt="Phone Icon" />
               <div>
