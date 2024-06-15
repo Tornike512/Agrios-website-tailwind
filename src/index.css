@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green-button: #49a760;
+  --grey-button: #a5a49a;
+  --white-button: #ffffff;
+
+  --green-button-hover: #4baf47;
+  --grey-button-hover: #e0e0e0;
+  --white-button-hover-border: #5151c6;
+}
