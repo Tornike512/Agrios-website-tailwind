@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from "uuid";
+
 import agriosLogo from "/src/assets/agrios-logo.svg";
 import emailIcon from "/src/assets/email-icon.svg";
 import facebookLogo from "/src/assets/facebook-logo.svg";
@@ -8,11 +10,13 @@ import pinterestLogo from "/src/assets/pinterest-logo.svg";
 import twitterLogo from "/src/assets/twitter-logo.svg";
 
 export function Header() {
+  const uniqueId = uuidv4();
+
   const socialMedia = [
-    { src: twitterLogo, alt: "Twitter Logo", id: "twitter" },
-    { src: facebookLogo, alt: "Facebook Logo", id: "facebook" },
-    { src: pinterestLogo, alt: "Pinterest Logo", id: "pinterest" },
-    { src: instagramLogo, alt: "Instagram Logo", id: "instagram" },
+    { src: twitterLogo, alt: "Twitter Logo", id: uniqueId },
+    { src: facebookLogo, alt: "Facebook Logo", id: uniqueId },
+    { src: pinterestLogo, alt: "Pinterest Logo", id: uniqueId },
+    { src: instagramLogo, alt: "Instagram Logo", id: uniqueId },
   ];
 
   return (
@@ -26,14 +30,14 @@ export function Header() {
                 key={logo.id}
                 className="flex items-center list-none cursor-pointer mr-2.5"
               >
-                <li className="bg-[#e3e3e3] flex p-[7px] rounded-[100%]">
+                <li className="bg-[#f0f0f0] flex p-[7px] rounded-[100%] hover:bg-[#D1D1D1]">
                   <img src={logo.src} alt={logo.alt} />
                 </li>
               </ul>
             );
           })}
           <address className="flex items-center">
-            <div>
+            <div className="flex">
               <img src={phoneIcon} alt="Phone Icon" />
               <div>
                 <p>Call anytime</p>
