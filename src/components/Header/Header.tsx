@@ -10,13 +10,32 @@ import pinterestLogo from "/src/assets/pinterest-logo.svg";
 import twitterLogo from "/src/assets/twitter-logo.svg";
 
 export function Header() {
-  const uniqueId = uuidv4();
-
   const socialMedia = [
-    { src: twitterLogo, alt: "Twitter Logo", id: uniqueId },
-    { src: facebookLogo, alt: "Facebook Logo", id: uniqueId },
-    { src: pinterestLogo, alt: "Pinterest Logo", id: uniqueId },
-    { src: instagramLogo, alt: "Instagram Logo", id: uniqueId },
+    { src: twitterLogo, alt: "Twitter Logo" },
+    { src: facebookLogo, alt: "Facebook Logo" },
+    { src: pinterestLogo, alt: "Pinterest Logo" },
+    { src: instagramLogo, alt: "Instagram Logo" },
+  ];
+
+  const contactInfo = [
+    {
+      src: phoneIcon,
+      alt: "Phone Icon",
+      text: "Call anytime",
+      additonalText: "+ 98 (000) - 9630",
+    },
+    {
+      src: emailIcon,
+      alt: "Email Icon",
+      text: "Send email",
+      additonalText: "TornikeTsagareishvili64@gmail.com",
+    },
+    {
+      src: locationIcon,
+      alt: "Location Icon",
+      text: "380 St Kilda Road",
+      additonalText: "Melbourne, Australia",
+    },
   ];
 
   return (
@@ -27,7 +46,7 @@ export function Header() {
           {socialMedia.map((logo) => {
             return (
               <ul
-                key={logo.id}
+                key={uuidv4()}
                 className="flex items-center list-none cursor-pointer mr-2.5"
               >
                 <li className="bg-[#f0f0f0] flex p-[7px] rounded-[100%] hover:bg-[#D1D1D1]">
@@ -37,27 +56,17 @@ export function Header() {
             );
           })}
           <address className="flex items-center">
-            <div className="flex">
-              <img src={phoneIcon} alt="Phone Icon" />
-              <div>
-                <p>Call anytime</p>
-                <p>+ 98 (000) - 9630</p>
-              </div>
-            </div>
-            <div>
-              <img src={emailIcon} alt="Email Icon" />
-              <div>
-                <p>Send email</p>
-                <p>TornikeTsagareishvili64@gmail.com</p>
-              </div>
-            </div>
-            <div>
-              <img src={locationIcon} alt="Location Icon" />
-              <div>
-                <p>380 St Kilda Road</p>
-                <p>Melbourne, Australia</p>
-              </div>
-            </div>
+            {contactInfo.map((info) => {
+              return (
+                <div key={uuidv4()} className="flex">
+                  <img src={info.src} alt={info.alt} />
+                  <div>
+                    <p>{info.text}</p>
+                    <p>{info.additonalText}</p>
+                  </div>
+                </div>
+              );
+            })}
           </address>
         </div>
       </section>
