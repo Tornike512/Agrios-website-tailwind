@@ -10,13 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "amqplib": "^0.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
-<<<<<<< HEAD
     "tailwind": "^4.0.0",
-=======
->>>>>>> f6800054d36fe5db7c532ff37c6e5fde1fbed561
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
