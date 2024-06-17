@@ -1,6 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import { Navigation } from "../Navigation";
 
+
 import agriosLogo from "/src/assets/agrios-logo.svg";
 import emailIcon from "/src/assets/email-icon.svg";
 import facebookLogo from "/src/assets/facebook-logo.svg";
@@ -11,6 +12,8 @@ import pinterestLogo from "/src/assets/pinterest-logo.svg";
 import twitterLogo from "/src/assets/twitter-logo.svg";
 
 export function Header() {
+
+
   const socialMedia = [
     { src: twitterLogo, alt: "Twitter Logo" },
     { src: facebookLogo, alt: "Facebook Logo" },
@@ -90,7 +93,7 @@ export function Header() {
       </header>
       <Navigation />
     </>
-  );
+            )
 }
 
 export default Header;
