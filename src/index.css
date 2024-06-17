@@ -18,6 +18,10 @@
   --white-button-hover-border: #5151c6;
 }
 
-.header-margin > *:last-child {
-  margin-right: 0;
+@layer base {
+  img,
+  video {
+    max-width: initial;
+    height: initial;
+  }
 }
