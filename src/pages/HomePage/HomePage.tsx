@@ -1,5 +1,11 @@
+import { HeaderSection } from "./HeaderSection";
+
 export function HomePage() {
-  return <div></div>;
+  return (
+    <div>
+      <HeaderSection />
+    </div>
+  );
 }
 
 export default HomePage;
