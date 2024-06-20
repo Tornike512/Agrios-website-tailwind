@@ -1,57 +1,46 @@
 import applesImage from "src/assets/apples-image.svg";
 import grapesImage from "src/assets/grapes-image.svg";
-import milkIcon from "src/assets/milk-icon.svg";
-import plantIcon from "src/assets/plant-icon-2.svg";
-import plantImage from "src/assets/plant-image.svg";
-import tractorIcon from "src/assets/tractor-icon.svg";
+import plantImage from "src/assets/plant-image-2.svg";
 import vegetablesImage from "src/assets/vegetables-image.svg";
-import vegetablesIcon from "src/assets/vegetables-icon.svg";
 
 export function OfferSection() {
   return (
-    <section className="max-w-[1200px] relative w-full ">
-      <div className="absolute z-[-2] top-0 w-[1200px] h-[400px] bg-[#F8F7F0]"></div>
-      <p>Our Services</p>
-      <h2>What We Offer</h2>
-      <ul>
-        <li>
+    <section className="max-w-[1200px] relative w-full flex flex-col items-center pt-[120px]">
+      <p className="text-[24px] text-[#EEC044]">Our Services</p>
+      <h2 className="text-[48px] text-[#1F1E17] font-bold mb-[50px]">
+        What We Offer
+      </h2>
+      <ul className="grid grid-cols-[1fr_1fr_1fr_1fr] gap-x-[30px]">
+        <li className="relative">
           <img src={applesImage} alt="Apple Image" />
-          <img src={tractorIcon} alt="Tractor Icon" />
-          <button>Read More</button>
-          <div>
-            <p>Agriculture Products</p>
-          </div>
+          <button className="right-[25px] bottom-[110px] absolute text-[12px] text-[#ffffff] font-bold bg-[#4BAF47] w-fit  px-[25px] py-4 rounded-[10px] hover:bg-[#54c950]">
+            Read More
+          </button>
         </li>
-        <li>
+        <li className="relative">
           <img src={vegetablesImage} alt="Vegetables Image" />
-          <img src={vegetablesIcon} alt="Vegetable Icon" />
-          <button>Read More</button>
-          <div>
-            <p>Organic Products</p>
-          </div>
+          <button className="right-[25px] bottom-[110px] absolute text-[12px] text-[#ffffff] font-bold bg-[#4BAF47] w-fit px-[25px] py-4 rounded-[10px] hover:bg-[#54c950]">
+            Read More
+          </button>
         </li>
-        <li>
+        <li className="relative">
           <img src={plantImage} alt="Plant Image" />
-          <img src={plantIcon} alt="Plant Icon" />
-          <button>Read More</button>
-          <div>
-            <p>Fresh Vegetables</p>
-          </div>
+          <button className="right-[25px] bottom-[110px] absolute text-[12px] text-[#ffffff] font-bold bg-[#4BAF47] w-fit px-[25px] py-4 rounded-[10px] hover:bg-[#54c950]">
+            Read More
+          </button>
         </li>
-        <li>
+        <li className="relative">
           <img src={grapesImage} alt="Grapes Image" />
-          <img src={milkIcon} alt="Milk Icon" />
-          <button>Read More</button>
-          <div>
-            <p>Dairy Products</p>
-          </div>
+          <button className="right-[25px] bottom-[110px] absolute text-[12px] text-[#ffffff] font-bold bg-[#4BAF47] w-fit px-[25px] py-4 rounded-[10px] hover:bg-[#54c950]">
+            Read More
+          </button>
         </li>
       </ul>
-      <div>
-        <p>Agriculture Products</p>
-        <p>Projects Completed</p>
-        <p>Satisfied Clients</p>
-        <p>Experts Farmers</p>
+      <div className="w-full absolute bottom-[-230px] justify-center grid grid-cols-[1fr_1fr_1fr_1fr] items-center text-lg bg-[#4BAF47] h-[158px] text-white rounded-[10px]">
+        <p className="flex justify-center">Agriculture Products</p>
+        <p className="flex justify-center">Projects Completed</p>
+        <p className="flex justify-center">Satisfied Clients</p>
+        <p className="flex justify-center">Experts Farmers</p>
       </div>
     </section>
   );
