@@ -1,5 +1,5 @@
 import fruitsImage from "src/assets/fruits-image.svg";
-import organitServiceImage from "src/assets/organic-service-image.svg";
+import organicServiceImage from "src/assets/organic-image.svg";
 import plantImage from "src/assets/plant-image.svg";
 import reformingImage from "src/assets/reforming-image.svg";
 import ripeningImage from "src/assets/ripening-image.svg";
@@ -10,21 +10,33 @@ import confirmIcon from "src/assets/confirm-icon.svg";
 export function FeaturesSection() {
   return (
     <section className="w-[1200px] mt-[120px]">
-      <ul className="grid grid-cols-[1fr_1fr_1fr]">
-        <li>
-          <p>Feature 01</p>
-          <h3>We're using a new technology</h3>
-          <img src={technologyImage} alt="Technology Image" />
+      <ul className="grid grid-cols-[1fr_1fr_1fr] gap-x-[30px]">
+        <li className="bg-[#ffffff] text-center shadow-[-12px_0px_15px_#0000001f] rounded-[10px] flex flex-col items-center justify-center p-2.5">
+          <p className="text-[20px] text-[#EEC044] py-[10px]">Feature 01</p>
+          <h3 className="text-[24px] font-bold">
+            We're using a<br /> new technology
+          </h3>
+          <img className="mb-5" src={technologyImage} alt="Technology Image" />
         </li>
-        <li>
-          <p>Feature 02</p>
-          <h3>Good in smart organic services</h3>
-          <img src={organitServiceImage} alt="Organic Service Image" />
+        <li className="bg-[#ffffff] text-center shadow-[-12px_0px_15px_#0000001f] rounded-[10px] flex flex-col items-center justify-center p-2.5">
+          <p className="text-[20px] text-[#EEC044] py-[10px]">Feature 02</p>
+          <h3 className="text-[24px] font-bold">
+            Good in smart
+            <br /> organic services
+          </h3>
+          <img
+            className="mb-5"
+            src={organicServiceImage}
+            alt="Organic Service Image"
+          />
         </li>
-        <li>
-          <p>Feature 03</p>
-          <h3>Reforming in the systems</h3>
-          <img src={reformingImage} alt="Reforming Image" />
+        <li className="bg-[#ffffff] text-center shadow-[-12px_0px_15px_#0000001f] rounded-[10px] flex flex-col items-center justify-center p-2.5">
+          <p className="text-[20px] text-[#EEC044] py-[10px]">Feature 03</p>
+          <h3 className="text-[24px] font-bold">
+            Reforming
+            <br /> in the systems
+          </h3>
+          <img className="mb-5" src={reformingImage} alt="Reforming Image" />
         </li>
       </ul>
       <div>
