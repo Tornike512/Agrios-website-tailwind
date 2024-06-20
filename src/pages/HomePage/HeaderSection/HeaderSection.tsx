@@ -1,15 +1,27 @@
+import headerMainImage from "src/assets/header-main-image.svg";
+
 export function HeaderSection() {
   return (
-    <section>
-      <img src="" alt="Header Section Main Image" />
-      <p>Welcome to agrios farming</p>
-      <h1>Agriculture & Eco Farming</h1>
-      <img src="" alt="Sign Icon" />
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-        luctus nec ullamcorper mattis, pulvinar dapibus leo.
-      </p>
-      <button>Discover More</button>
+    <section className="flex flex-col items-center">
+      <img
+        className="max-w-[1920px] w-full; absolute -translate-x-2/4 translate-y-0 z-[-1] left-2/4"
+        src={headerMainImage}
+        alt="Header Section Main Image"
+      />
+      <div className="w-full max-w-[1200px] h-[700px] flex flex-col justify-center text-[#ffffff]">
+        <p className="text-[16px]">WELCOME TO AGRIOS FARMING</p>
+        <h1 className="text-[120px] leading-[120px]">
+          Agriculture &<br /> Eco Farming
+        </h1>
+        <p className="text-[16px] mt-[20px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus,
+          <br /> luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <button className="bg-[#4BAF47] w-fit mt-10 px-[50px] py-4 rounded-[10px] hover:bg-[#54c950]">
+          Discover More
+        </button>
+      </div>
     </section>
   );
 }
