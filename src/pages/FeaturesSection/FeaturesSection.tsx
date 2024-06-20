@@ -1,27 +1,36 @@
+import fruitsImage from "src/assets/fruits-image.svg";
+import organitServiceImage from "src/assets/organic-service-image.svg";
+import plantImage from "src/assets/plant-image.svg";
+import reformingImage from "src/assets/reforming-image.svg";
+import ripeningImage from "src/assets/ripening-image.svg";
+import technologyImage from "src/assets/technology-image.svg";
+import tractorImage from "src/assets/tractor-image.svg";
+import confirmIcon from "src/assets/confirm-icon.svg";
+
 export function FeaturesSection() {
   return (
-    <section className="w-[1200px]">
-      <ul>
+    <section className="w-[1200px] mt-[120px]">
+      <ul className="grid grid-cols-[1fr_1fr_1fr]">
         <li>
           <p>Feature 01</p>
           <h3>We're using a new technology</h3>
-          <img src="" alt="Technology Image" />
+          <img src={technologyImage} alt="Technology Image" />
         </li>
         <li>
           <p>Feature 02</p>
           <h3>Good in smart organic services</h3>
-          <img src="" alt="Organic Service Image" />
+          <img src={organitServiceImage} alt="Organic Service Image" />
         </li>
         <li>
           <p>Feature 03</p>
           <h3>Reforming in the systems</h3>
-          <img src="" alt="Reforming Image" />
+          <img src={reformingImage} alt="Reforming Image" />
         </li>
       </ul>
       <div>
         <section>
-          <img src="" alt="Tractor Image" />
-          <img src="" alt="Plant Image" />
+          <img src={tractorImage} alt="Tractor Image" />
+          <img src={plantImage} alt="Plant Image" />
         </section>
         <article>
           <p>Our Introductions</p>
@@ -34,20 +43,20 @@ export function FeaturesSection() {
           </p>
           <ul>
             <li>
-              <img src="" alt="Fruits image" />
+              <img src={fruitsImage} alt="Fruits Icon" />
               <h4>Growing fruits vegetables</h4>
             </li>
             <li>
-              <img src="" alt="Ripening Image" />
+              <img src={ripeningImage} alt="Ripening Icon" />
               <h4>Tips for ripening your fruits</h4>
             </li>
           </ul>
           <p>
-            <img src="" alt="Confirm Image" />
+            <img src={confirmIcon} alt="Confirm Image" />
             Lorem Ipsum is not simply random text.
           </p>
           <p>
-            <img src="" alt="Confirm Image" />
+            <img src={confirmIcon} alt="Confirm Image" />
             Making this the first true generator on the internet.
           </p>
           <button>Discover More</button>
