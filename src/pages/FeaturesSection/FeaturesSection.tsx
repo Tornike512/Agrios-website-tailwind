@@ -39,39 +39,53 @@ export function FeaturesSection() {
           <img className="mb-5" src={reformingImage} alt="Reforming Image" />
         </li>
       </ul>
-      <div>
-        <section>
+      <div className="pt-[106px] flex">
+        <section className="relative h-[600px]">
           <img src={tractorImage} alt="Tractor Image" />
-          <img src={plantImage} alt="Plant Image" />
+          <img
+            className=" absolute rounded-[100%] border-[15px] border-solid border-white -left-11 -bottom-11"
+            src={plantImage}
+            alt="Plant Image"
+          />
         </section>
-        <article>
-          <p>Our Introductions</p>
-          <h2>Agriculture & Organic Product Farm</h2>
-          <p>Agrios is the largest global organic farm.</p>
-          <p>
+        <article className="px-[60px] py-0;">
+          <p className="text-[#EEC044] text-[24px]">Our Introductions</p>
+          <h2 className="text-[48px] leading-[60px] font-bold mb-[33px]">
+            Agriculture & Organic Product Farm
+          </h2>
+          <p className="text-[26px] text-[#4BAF47] font-bold">
+            Agrios is the largest global organic farm.
+          </p>
+          <p className="text-[16px] text-[#878680] mb-[40px]">
             There are many variations of passages of lorem ipsum available but
             the majority have suffered alteration in some form by injected humor
             or random word which don’t look even.
           </p>
-          <ul>
-            <li>
-              <img src={fruitsImage} alt="Fruits Icon" />
-              <h4>Growing fruits vegetables</h4>
+          <ul className="flex mb-[35px]">
+            <li className="flex items-center">
+              <img className="mr-2.5" src={fruitsImage} alt="Fruits Icon" />
+              <h4 className="text-[20px] font-bold leading-[20px]">
+                Growing fruits vegetables
+              </h4>
             </li>
-            <li>
-              <img src={ripeningImage} alt="Ripening Icon" />
-              <h4>Tips for ripening your fruits</h4>
+            <li className="flex items-center">
+              <img className="mr-2.5" src={ripeningImage} alt="Ripening Icon" />
+              <h4 className="text-[20px] font-bold leading-[20px]">
+                Tips for ripening your fruits
+              </h4>
             </li>
           </ul>
-          <p>
-            <img src={confirmIcon} alt="Confirm Image" />
+          <p className="flex text-[16px] font-bold">
+            <img className="mr-2.5" src={confirmIcon} alt="Confirm Image" />
             Lorem Ipsum is not simply random text.
           </p>
-          <p>
-            <img src={confirmIcon} alt="Confirm Image" />
+          <p className="flex text-[16px] font-bold">
+            <img className="mr-2.5" src={confirmIcon} alt="Confirm Image" />
             Making this the first true generator on the internet.
           </p>
-          <button>Discover More</button>
+          <button className="text-[#ffffff] font-bold bg-[#4BAF47] w-fit mt-[5.5rem] px-[50px] py-4 rounded-[10px] hover:bg-[#54c950]">
+            Discover More
+          </button>
         </article>
       </div>
     </section>
