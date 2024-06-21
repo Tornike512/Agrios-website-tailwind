@@ -2,6 +2,7 @@ import { HeaderSection } from "./HeaderSection";
 import { FeaturesSection } from "./FeaturesSection";
 import { OfferSection } from "./OfferSection";
 import { VideoSection } from "./VideoSection";
+import { ExploreProjects } from "./ExploreProjects";
 
 export function HomePage() {
   return (
@@ -10,6 +11,7 @@ export function HomePage() {
       <FeaturesSection />
       <OfferSection />
       <VideoSection />
+      <ExploreProjects />
     </div>
   );
 }

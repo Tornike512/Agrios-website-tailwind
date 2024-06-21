@@ -20,7 +20,7 @@ export function VideoSection() {
         src={startVideoIcon}
         alt="Start Video Icon"
       />
-      <h2 className="text-[#ffffff] text-[70px] absolute left-[368px] absolute leading-[77px] font-[bold] bottom-[132px]">
+      <h2 className="text-[#ffffff] text-[70px] absolute left-[368px] leading-[77px] font-bold bottom-[132px]">
         Agriculture
         <br /> Matters to the
         <br /> Future of
