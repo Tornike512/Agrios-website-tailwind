@@ -1,7 +1,7 @@
 import { HeaderSection } from "./HeaderSection";
 import { FeaturesSection } from "./FeaturesSection";
 import { OfferSection } from "./OfferSection";
-import { FutureSection } from "./FutureSection";
+import { VideoSection } from "./VideoSection";
 
 export function HomePage() {
   return (
@@ -9,7 +9,7 @@ export function HomePage() {
       <HeaderSection />
       <FeaturesSection />
       <OfferSection />
-      <FutureSection />
+      <VideoSection />
     </div>
   );
 }

@@ -36,12 +36,6 @@ export function OfferSection() {
           </button>
         </li>
       </ul>
-      <div className="w-full absolute bottom-[-230px] justify-center grid grid-cols-[1fr_1fr_1fr_1fr] items-center text-lg bg-[#4BAF47] h-[158px] text-white rounded-[10px]">
-        <p className="flex justify-center">Agriculture Products</p>
-        <p className="flex justify-center">Projects Completed</p>
-        <p className="flex justify-center">Satisfied Clients</p>
-        <p className="flex justify-center">Experts Farmers</p>
-      </div>
     </section>
   );
 }

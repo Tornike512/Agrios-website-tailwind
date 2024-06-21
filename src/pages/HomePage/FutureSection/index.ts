@@ -1,1 +1,0 @@
-export { FutureSection } from "./FutureSection";
