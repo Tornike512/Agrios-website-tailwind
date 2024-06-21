@@ -42,7 +42,7 @@ export function Header() {
   return (
     <>
       <header className="w-full bg-#ffffff h-[115px] flex items-center justify-center">
-        <section className="w-[75%] max-w-[1200px] flex  items-center justify-between">
+        <section className="max-w-[1200px] w-full flex  items-center justify-between">
           <img className="p-[20px]" src={agriosLogo} alt="Agrios Logo" />
           <div className="flex">
             {socialMedia.map((logo, index) => {
