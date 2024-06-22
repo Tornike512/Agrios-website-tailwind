@@ -1,4 +1,4 @@
-import agricultureVideo from "src/assets/video.mp4";
+// import agricultureVideo from "src/assets/video.mp4";
 import startVideoIcon from "src/assets/start-video-icon.svg";
 
 export function VideoSection() {
@@ -10,11 +10,7 @@ export function VideoSection() {
         <p className="flex justify-center">Satisfied Clients</p>
         <p className="flex justify-center">Experts Farmers</p>
       </div>
-      <video
-        className="max-w-[1920px] w-full mt-[130px]"
-        src={agricultureVideo}
-        controls
-      ></video>
+      <video className="max-w-[1920px] w-full mt-[130px]" controls></video>
       <img
         className="cursor-pointer absolute right-[417px] bottom-[42%]"
         src={startVideoIcon}
