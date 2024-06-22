@@ -1,4 +1,4 @@
-import agricultureVideo from "src/assets/agriculture-video.mp4";
+import agricultureVideo from "src/assets/video.mp4";
 import startVideoIcon from "src/assets/start-video-icon.svg";
 
 export function VideoSection() {
