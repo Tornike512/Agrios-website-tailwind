@@ -4,27 +4,23 @@ import wheatFarmingImage from "src/assets/wheat-farming-image.svg";
 
 export function ExploreProjects() {
   return (
-    <section>
-      <p>Recently Completed</p>
-      <h2>Explore Projects</h2>
-      <div>
-        <figure>
-          <img src={harvestingImage} alt="Wheat Image" />
-          <figcaption>Easy Harvesting</figcaption>
-        </figure>
-        <figure>
-          <img src={tractorFarmingImage} alt="Tractor Image" />
-          <figcaption>Agriculture Farming</figcaption>
-        </figure>
-        <figure>
-          <img src={harvestingImage} alt="Wheat Image" />
-          <figcaption>Ecological Farming</figcaption>
-        </figure>
-        <figure>
-          <img src={wheatFarmingImage} alt="Wheat Farming Image" />
-          <figcaption>Organic Solutions</figcaption>
-        </figure>
-      </div>
+    <section className="w-full max-w-[1480px] my-[110px]">
+      <p className="flex justify-center text-[24px] text-[#EEC044]">
+        Recently Completed
+      </p>
+      <h2 className="flex justify-center text-[48px] text-[#1F1E17] font-bold mb-[50px]">
+        Explore Projects
+      </h2>
+      <figure className="grid grid-cols-[1fr_1fr_1fr_1fr] gap-x-2.5">
+        <img className="w-full" src={harvestingImage} alt="Wheat Image" />
+        <img className="w-full" src={tractorFarmingImage} alt="Tractor Image" />
+        <img className="w-full" src={harvestingImage} alt="Wheat Image" />
+        <img
+          className="w-full"
+          src={wheatFarmingImage}
+          alt="Wheat Farming Image"
+        />
+      </figure>
     </section>
   );
 }
