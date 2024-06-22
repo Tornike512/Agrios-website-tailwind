@@ -1,3 +1,7 @@
+import harvestingImage from "src/assets/harvesting-image.svg";
+import tractorFarmingImage from "src/assets/tractor-farming-image.svg";
+import wheatFarmingImage from "src/assets/wheat-farming-image.svg";
+
 export function ExploreProjects() {
   return (
     <section>
@@ -5,19 +9,19 @@ export function ExploreProjects() {
       <h2>Explore Projects</h2>
       <div>
         <figure>
-          <img src="" alt="Wheat Image" />
+          <img src={harvestingImage} alt="Wheat Image" />
           <figcaption>Easy Harvesting</figcaption>
         </figure>
         <figure>
-          <img src="" alt="Tractor Image" />
+          <img src={tractorFarmingImage} alt="Tractor Image" />
           <figcaption>Agriculture Farming</figcaption>
         </figure>
         <figure>
-          <img src="" alt="Wheat Image" />
+          <img src={harvestingImage} alt="Wheat Image" />
           <figcaption>Ecological Farming</figcaption>
         </figure>
         <figure>
-          <img src="" alt="Wheat Farming Image" />
+          <img src={wheatFarmingImage} alt="Wheat Farming Image" />
           <figcaption>Organic Solutions</figcaption>
         </figure>
       </div>
