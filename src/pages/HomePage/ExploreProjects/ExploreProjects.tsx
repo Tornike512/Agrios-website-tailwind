@@ -12,11 +12,23 @@ export function ExploreProjects() {
         Explore Projects
       </h2>
       <figure className="grid grid-cols-[1fr_1fr_1fr_1fr] gap-x-2.5">
-        <img className="w-full" src={harvestingImage} alt="Wheat Image" />
-        <img className="w-full" src={tractorFarmingImage} alt="Tractor Image" />
-        <img className="w-full" src={harvestingImage} alt="Wheat Image" />
         <img
-          className="w-full"
+          className="w-full cursor-pointer"
+          src={harvestingImage}
+          alt="Wheat Image"
+        />
+        <img
+          className="w-full cursor-pointer"
+          src={tractorFarmingImage}
+          alt="Tractor Image"
+        />
+        <img
+          className="w-full cursor-pointer"
+          src={harvestingImage}
+          alt="Wheat Image"
+        />
+        <img
+          className="w-full cursor-pointer"
           src={wheatFarmingImage}
           alt="Wheat Farming Image"
         />
