@@ -71,7 +71,7 @@ export function ChooseAgrios() {
             </div>
           </li>
         </ul>
-        <button className="mt-[50px] bg-[#4BAF47] font-bold w-fit px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] text-[#ffffff]">
+        <button className="mt-[90px] bg-[#4BAF47] font-bold w-fit px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] text-[#ffffff]">
           Discover More
         </button>
       </figure>
