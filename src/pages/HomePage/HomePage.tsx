@@ -4,6 +4,7 @@ import { OfferSection } from "./OfferSection";
 import { VideoSection } from "./VideoSection";
 import { ExploreProjects } from "./ExploreProjects";
 import { ReviewsSection } from "./ReviewsSection";
+import { ChooseAgrios } from "./ChooseAgrios";
 
 export function HomePage() {
   return (
@@ -14,6 +15,7 @@ export function HomePage() {
       <VideoSection />
       <ExploreProjects />
       <ReviewsSection />
+      <ChooseAgrios />
     </div>
   );
 }
