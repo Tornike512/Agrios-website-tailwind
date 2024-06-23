@@ -1,3 +1,8 @@
+import fiveStarsImage from "src/assets/five-stars-image.jpg";
+import frameImage from "src/assets/frame-image.svg";
+import personImage from "src/assets/my-image.jpg";
+import greenCircle from "src/assets/green-circle-image.svg";
+
 export function ReviewsSection() {
   return (
     <section>
@@ -21,13 +26,13 @@ export function ReviewsSection() {
             </p>
             <figure>
               <figcaption>Bonnie Tolbert</figcaption>
-              <img src="" alt="Five Stars Image" />
+              <img src={fiveStarsImage} alt="Five Stars Image" />
             </figure>
           </div>
           <figure>
-            <img src="" alt="Frame Image" />
-            <img src="" alt="Person Image" />
-            <img src="" alt="Green Circle Image" />
+            <img src={frameImage} alt="Frame Image" />
+            <img src={personImage} alt="Person Image" />
+            <img src={greenCircle} alt="Green Circle Image" />
           </figure>
         </article>
       </div>
