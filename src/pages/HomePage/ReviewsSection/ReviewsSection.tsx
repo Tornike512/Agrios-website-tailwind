@@ -1,5 +1,4 @@
 import fiveStarsImage from "src/assets/five-stars-image.jpg";
-import frameImage from "src/assets/frame-image.svg";
 import personImage from "src/assets/my-image.jpg";
 import greenCircle from "src/assets/green-circle-image.svg";
 

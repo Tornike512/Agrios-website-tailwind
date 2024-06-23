@@ -1,7 +1,12 @@
+import chooseAgriosImage from "src/assets/choose-agrios-main-image.svg";
+import greenCorrectIcon from "src/assets/green-correct-icon.svg";
+import lightGreenCorrectIcon from "src/assets/light-green-correct-icon.svg";
+import yellowCorrectIcon from "src/assets/yellow-correct-icon.svg";
+
 export function ChooseAgrios() {
   return (
     <section>
-      <img src="" alt="Choose Agrios Section Main Image" />
+      <img src={chooseAgriosImage} alt="Choose Agrios Section Main Image" />
       <figure>
         <p>Our Farm Benefits</p>
         <h2>Why Choose Agrios Market</h2>
@@ -12,7 +17,7 @@ export function ChooseAgrios() {
         </p>
         <ul>
           <li>
-            <img src="" alt="Green Correct Icon" />
+            <img src={greenCorrectIcon} alt="Green Correct Icon" />
             <div>
               <h3>Quality Organic Food</h3>
               <p>
@@ -22,7 +27,7 @@ export function ChooseAgrios() {
             </div>
           </li>
           <li>
-            <img src="" alt="Light Green Correct Icon" />
+            <img src={lightGreenCorrectIcon} alt="Light Green Correct Icon" />
             <div>
               <h3>Professional Farmers</h3>
               <p>
@@ -32,7 +37,7 @@ export function ChooseAgrios() {
             </div>
           </li>
           <li>
-            <img src="" alt="Yellow Correct Icon" />
+            <img src={yellowCorrectIcon} alt="Yellow Correct Icon" />
             <div>
               <h3>Quality Products</h3>
               <p>
