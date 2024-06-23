@@ -14,20 +14,40 @@ import yellowPhoneIcon from "src/assets/yellow-phone-icon.svg";
 export function Footer() {
   return (
     <>
-      <footer>
-        <div>
-          <ul>
-            <li>
-              <img src={blackAgriosLogo} alt="Agrios Logo" />
-              <p>
+      <footer className="bg-[#24231D] flex justify-center py-[120px]">
+        <div className="flex max-w-[1200px] w-full text-[#A5A49A]">
+          <ul className="flex">
+            <li className="max-w-[270px] w-full px-[10px]">
+              <img
+                className="mb-[21px]"
+                src={blackAgriosLogo}
+                alt="Agrios Logo"
+              />
+              <p className="mb-[20px]">
                 There are many variations of passages of lorem ipsum available,
                 but the majority suffered.
               </p>
-              <figure>
-                <img src={whiteTwitterLogo} alt="Twitter Logo" />
-                <img src={whiteFacebookLogo} alt="FAcebook Logo" />
-                <img src={whitePinterestLogo} alt="Pinterest Logo" />
-                <img src={whiteInstagramLogo} alt="Instagram Logo" />
+              <figure className="flex">
+                <img
+                  className="bg-[#1F1E17] mr-[10px] px-[15px] py-[13px] rounded-[100%] cursor-pointer hover:bg-[#525252]"
+                  src={whiteTwitterLogo}
+                  alt="Twitter Logo"
+                />
+                <img
+                  className="bg-[#1F1E17] mr-[10px] px-[15px] py-[13px] rounded-[100%] cursor-pointer hover:bg-[#525252]"
+                  src={whiteFacebookLogo}
+                  alt="FAcebook Logo"
+                />
+                <img
+                  className="bg-[#1F1E17] mr-[10px] px-[15px] py-[13px] rounded-[100%] cursor-pointer hover:bg-[#525252]"
+                  src={whitePinterestLogo}
+                  alt="Pinterest Logo"
+                />
+                <img
+                  className="bg-[#1F1E17] px-[15px] py-[13px] rounded-[100%] cursor-pointer hover:bg-[#525252]"
+                  src={whiteInstagramLogo}
+                  alt="Instagram Logo"
+                />
               </figure>
             </li>
             <li>
