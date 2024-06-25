@@ -9,8 +9,8 @@ import confirmIcon from "src/assets/confirm-icon.svg";
 
 export function FeaturesSection() {
   return (
-    <section className="w-[1200px] mt-[120px]">
-      <ul className="grid grid-cols-[1fr_1fr_1fr] gap-x-[30px]">
+    <section className="relative w-[1200px] mt-[120px] ">
+      <ul className="grid grid-cols-[1fr_1fr_1fr] gap-x-[30px] absolute w-full z-[2] top-[-24%]">
         <li className="bg-[#ffffff] text-center shadow-[-12px_0px_15px_#0000001f] rounded-[10px] flex flex-col items-center justify-center p-2.5">
           <p className="text-[20px] text-[#EEC044] py-[10px]">Feature 01</p>
           <h3 className="text-[24px] font-bold">

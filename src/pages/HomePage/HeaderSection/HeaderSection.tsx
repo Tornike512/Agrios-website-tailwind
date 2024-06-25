@@ -2,13 +2,13 @@ import headerMainImage from "src/assets/header-main-image.svg";
 
 export function HeaderSection() {
   return (
-    <section className="max-w-[1200px] w-full">
+    <section className="max-w-[1200px] w-full h-[810px] flex justify-center items-center">
       <img
         className="max-w-[1920px] w-full absolute -translate-x-2/4 translate-y-0 z-[-1] left-2/4"
         src={headerMainImage}
         alt="Header Section Main Image"
       />
-      <div className="w-full max-w-[1200px] h-[600px] flex flex-col justify-end text-[#ffffff]">
+      <div className="w-full max-w-[1200px] flex flex-col justify-end text-[#ffffff]">
         <p className="text-[16px]">WELCOME TO AGRIOS FARMING</p>
         <h1 className="text-[120px] leading-[120px]">
           Agriculture &<br /> Eco Farming
