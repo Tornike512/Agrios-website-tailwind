@@ -16,12 +16,12 @@ export function Navigation() {
 
   return (
     <nav className="h-[80px] w-full bg-[#F4F4F3] flex items-center justify-center">
-      <ul className="max-w-[1200px] w-full flex justify-between items-center">
-        <li className="w-full max-w-[800px] px-[35px] py-0; flex justify-between">
+      <ul className="max-w-[1200px] w-full flex justify-between items-center md:justify-normal">
+        <li className="w-full max-w-[800px] px-[35px] py-0; flex justify-between md:overflow-x-scroll">
           {headerNavigation.map((nav) => {
             return (
               <a
-                className="text-[#878680] text-base cursor-pointer hover:text-[#000000]"
+                className="text-[#878680] text-base cursor-pointer hover:text-[#000000] md:mr-[40px]"
                 key={uuidv4()}
                 href="#"
               >
@@ -30,7 +30,7 @@ export function Navigation() {
             );
           })}
         </li>
-        <li className="flex justify-center items-center pl-[20px] border-l-2 lborder-solid border-[#E4E2D7] cursor-pointer">
+        <li className="flex justify-center items-center pl-[20px] pr-[35px] border-l-2 lborder-solid border-[#E4E2D7] cursor-pointer md:hidden">
           <img src={searchIcon} alt="Search Logo" />
           <img src={cartIcon} alt="Cart Logo" />
         </li>
