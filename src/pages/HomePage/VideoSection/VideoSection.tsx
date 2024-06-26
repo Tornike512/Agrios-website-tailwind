@@ -4,7 +4,7 @@ import startVideoIcon from "src/assets/start-video-icon.svg";
 export function VideoSection() {
   return (
     <section className="relative">
-      <div className="w-full max-w-[62%] left-[19%] absolute top-[7%] justify-center grid grid-cols-[1fr_1fr_1fr_1fr] items-center text-lg bg-[#4BAF47] h-[158px] text-white rounded-[10px]">
+      <div className="w-full max-w-[62%] px-[40px] left-[19%] absolute top-[7%] justify-center grid grid-cols-[1fr_1fr_1fr_1fr] items-center text-lg bg-[#4BAF47] h-[158px] text-white rounded-[10px]">
         <p className="flex justify-center">Agriculture Products</p>
         <p className="flex justify-center">Projects Completed</p>
         <p className="flex justify-center">Satisfied Clients</p>

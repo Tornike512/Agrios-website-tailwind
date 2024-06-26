@@ -4,7 +4,7 @@ import greenCircle from "src/assets/green-circle-image.svg";
 
 export function ReviewsSection() {
   return (
-    <section className="w-full flex items-center justify-center bg-[#F8F7F0] py-[120px]">
+    <section className="w-full flex items-center justify-center bg-[#F8F7F0] py-[120px] px-[40px] ">
       <div className="flex justify-center max-w-[1200px] w-full">
         <section className="max-w-[308px] w-full mr-[30px]">
           <p className="text-[24px] text-[#EEC044]">Our Testimonials</p>

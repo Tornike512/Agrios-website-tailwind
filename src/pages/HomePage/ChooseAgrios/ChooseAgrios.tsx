@@ -5,7 +5,7 @@ import yellowCorrectIcon from "src/assets/yellow-correct-icon.svg";
 
 export function ChooseAgrios() {
   return (
-    <section className="my-[120px] w-full max-w-[1200px] flex">
+    <section className="my-[120px] w-full max-w-[1240px] flex px-[40px]">
       <img
         className="mr-[10px]"
         src={chooseAgriosImage}

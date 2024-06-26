@@ -5,7 +5,7 @@ import vegetablesImage from "src/assets/vegetables-image.svg";
 
 export function OfferSection() {
   return (
-    <section className="max-w-[1200px] relative w-full flex flex-col items-center pt-[120px]">
+    <section className="max-w-[1240px] px-[40px] relative w-full flex flex-col items-center pt-[120px]">
       <p className="text-[24px] text-[#EEC044]">Our Services</p>
       <h2 className="text-[48px] text-[#1F1E17] font-bold mb-[50px]">
         What We Offer

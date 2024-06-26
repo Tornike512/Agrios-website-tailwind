@@ -2,7 +2,7 @@ import headerMainImage from "src/assets/header-main-image.svg";
 
 export function HeaderSection() {
   return (
-    <section className="max-w-[1200px] w-full h-[810px] justify-center flex items-center">
+    <section className="max-w-[1240px] px-[40px] w-full h-[810px] justify-center flex items-center">
       <img
         className="max-w-[1920px] absolute -translate-x-2/4 translate-y-0 z-[-1] left-2/4"
         src={headerMainImage}

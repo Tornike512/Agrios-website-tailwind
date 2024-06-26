@@ -4,7 +4,7 @@ import wheatFarmingImage from "src/assets/wheat-farming-image.svg";
 
 export function ExploreProjects() {
   return (
-    <section className="w-full max-w-[1480px] my-[110px]">
+    <section className="w-full max-w-[1520px] px-[40px] my-[110px]">
       <p className="flex justify-center text-[24px] text-[#EEC044]">
         Recently Completed
       </p>
