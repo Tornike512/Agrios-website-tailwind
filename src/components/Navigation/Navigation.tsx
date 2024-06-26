@@ -21,7 +21,7 @@ export function Navigation() {
           {headerNavigation.map((nav) => {
             return (
               <a
-                className="text-[#878680] text-base cursor-pointer hover:text-[#000000] md:mr-[40px]"
+                className="text-[#eeebdb] text-base cursor-pointer hover:text-[#000000] md:mr-[40px]"
                 key={uuidv4()}
                 href="#"
               >
