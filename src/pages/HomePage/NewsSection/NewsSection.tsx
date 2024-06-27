@@ -8,7 +8,7 @@ export function NewsSection() {
       <h2 className="text-[48px] text-[#1F1E17] font-bold leading-[55px] mb-[50px] md:text-[36px]">
         News & Articles
       </h2>
-      <figure className="grid grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr] lg:gap-y-[15px]">
+      <figure className="grid grid-cols-[1fr_1fr_1fr] lg:grid-cols-[1fr] lg:gap-y-[15px] w-full">
         <img
           className="cursor-pointer w-full"
           src={foodProductionImage}

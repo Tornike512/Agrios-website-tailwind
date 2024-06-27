@@ -14,10 +14,10 @@ import yellowPhoneIcon from "src/assets/yellow-phone-icon.svg";
 export function Footer() {
   return (
     <>
-      <footer className="bg-[#24231D] flex justify-center py-[120px]">
-        <div className="flex max-w-[1200px] w-full text-[#A5A49A] justify-between">
-          <ul className="flex mr-[65px]">
-            <li className="max-w-[270px] w-full px-[10px]">
+      <footer className="bg-[#24231D] flex justify-center py-[120px] px-[40px] lg:pl-[18%] sm:pl-[11%]">
+        <div className="flex max-w-[1200px] w-full text-[#A5A49A] justify-between lg:block">
+          <ul className="flex mr-[65px] lg:block">
+            <li className="max-w-[270px] w-full px-[10px] lg:max-w-fit lg:mb-[20px]">
               <img
                 className="mb-[21px]"
                 src={blackAgriosLogo}
@@ -50,36 +50,42 @@ export function Footer() {
                 />
               </figure>
             </li>
-            <li className="mr-[35px]">
+            <li className="mr-[35px] lg:max-w-fit lg:mb-[20px]">
               <h3 className="text-[#ffffff] text-[20px] font-bold max-w-[74px] w-full border-b-[5px] border-b-[#4BAF47] border-solid mb-[20px]">
                 Explore
               </h3>
               <figure className="flex mb-[6px]">
                 <img className="mr-[10px] " src={leafIcon} alt="Leaf Icon" />
-                <figcaption>About</figcaption>
+                <figcaption className="whitespace-nowrap">About</figcaption>
               </figure>
               <figure className="flex mb-[6px]">
                 <img className="mr-[10px]" src={leafIcon} alt="Leaf Icon" />
-                <figcaption>Services</figcaption>
+                <figcaption className="whitespace-nowrap">Services</figcaption>
               </figure>
               <figure className="flex mb-[6px]">
                 <img className="mr-[10px]" src={leafIcon} alt="Leaf Icon" />
-                <figcaption>Our Projects</figcaption>
+                <figcaption className="whitespace-nowrap">
+                  Our Projects
+                </figcaption>
               </figure>
               <figure className="flex mb-[6px]">
                 <img className="mr-[10px]" src={leafIcon} alt="Leaf Icon" />
-                <figcaption>Meet the Farmers</figcaption>
+                <figcaption className="whitespace-nowrap">
+                  Meet the Farmers
+                </figcaption>
               </figure>
               <figure className="flex mb-[6px]">
                 <img className="mr-[10px]" src={leafIcon} alt="Leaf Icon" />
-                <figcaption>Latest News</figcaption>
+                <figcaption className="whitespace-nowrap">
+                  Latest News
+                </figcaption>
               </figure>
               <figure className="flex mb-[6px]">
                 <img className="mr-[10px]" src={leafIcon} alt="Leaf Icon" />
-                <figcaption>Contact</figcaption>
+                <figcaption className="whitespace-nowrap">Contact</figcaption>
               </figure>
             </li>
-            <li className="w-full max-w-[190px]">
+            <li className="w-full max-w-[190px] lg:max-w-fit lg:mb-[20px]">
               <h3 className="text-[#ffffff] text-[20px] font-bold max-w-[74px] w-full border-b-[5px] border-b-[#4BAF47] border-solid mb-[20px]">
                 News
               </h3>
@@ -97,7 +103,7 @@ export function Footer() {
               </div>
             </li>
           </ul>
-          <address className="not-italic max-w-[270px] w-full px-[15px] relative">
+          <address className="not-italic max-w-[270px] w-full px-[15px] relative lg:p-0">
             <h3 className="text-[#ffffff] text-[20px] font-bold max-w-[74px] w-full border-b-[5px] border-b-[#4BAF47] border-solid mb-[20px]">
               Contact
             </h3>
@@ -132,7 +138,7 @@ export function Footer() {
               placeholder="Your Email Address"
               type="email"
             />
-            <button className="bg-[#4BAF47] p-[16px] absolute rounded-tr-[10px] rounded-br-[10px] hover:bg-[#54c950] right-[5px]">
+            <button className="bg-[#4BAF47] p-[16px] absolute rounded-tr-[10px] rounded-br-[10px] hover:bg-[#54c950] right-[38px]">
               <img src={sendIcon} alt="Send Icon" />
             </button>
           </address>
