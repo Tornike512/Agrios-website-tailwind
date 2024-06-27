@@ -20,7 +20,7 @@ export function ReviewsSection() {
             View All Testimonials
           </button>
         </section>
-        <article className="h-[250px] p-[20px] flex items-center justify-center bg-[#ffffff] rounded-[10px] mt-[10px] lg:mt-[40px] md:flex md:flex-col-reverse md:h-fit md:text-center">
+        <article className="h-[250px] p-[40px] flex items-center justify-center bg-[#ffffff] rounded-[10px] mt-[10px] lg:mt-[40px] md:flex md:flex-col-reverse md:h-fit md:text-center">
           <div>
             <p className="text-[18px] text-[#878680] mb-[25px]">
               There are many variations of passages available, but the majority

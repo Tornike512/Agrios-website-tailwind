@@ -7,12 +7,14 @@ export function ChooseAgrios() {
   return (
     <section className="my-[120px] w-full max-w-[1240px] flex px-[40px]">
       <img
-        className="mr-[10px]"
+        className="mr-[10px] xl:hidden"
         src={chooseAgriosImage}
         alt="Choose Agrios Section Main Image"
       />
       <figure>
-        <p className="text-[24px] text-[#EEC044]">Our Farm Benefits</p>
+        <p className="text-[24px] text-[#EEC044] xl:text-cennter">
+          Our Farm Benefits
+        </p>
         <h2 className="text-[48px] text-[#1F1E17] font-bold leading-[55px] mb-[30px]">
           Why Choose Agrios Market
         </h2>
@@ -71,7 +73,7 @@ export function ChooseAgrios() {
             </div>
           </li>
         </ul>
-        <button className="mt-[90px] bg-[#4BAF47] font-bold w-fit px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] text-[#ffffff]">
+        <button className="mt-[90px] bg-[#4BAF47] font-bold w-fit px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] text-[#ffffff] md:w-full">
           Discover More
         </button>
       </figure>
