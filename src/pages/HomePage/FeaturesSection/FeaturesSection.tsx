@@ -9,8 +9,8 @@ import confirmIcon from "src/assets/confirm-icon.svg";
 
 export function FeaturesSection() {
   return (
-    <section className="relative w-[1240px] px-[40px] mt-[120px] ">
-      <ul className="grid grid-cols-[1fr_1fr_1fr] gap-x-[30px] absolute w-full z-[2] top-[-24%]">
+    <section className="relative w-[1240px] px-[40px] mt-[120px] xl:w-full">
+      <ul className="grid grid-cols-[400px_400px_400px] gap-x-[30px] absolute w-full z-[2] top-[-19%] right-[11px] xl:hidden ">
         <li className="bg-[#ffffff] text-center shadow-[-12px_0px_15px_#0000001f] rounded-[10px] flex flex-col items-center justify-center p-2.5">
           <p className="text-[20px] text-[#EEC044] py-[10px]">Feature 01</p>
           <h3 className="text-[24px] font-bold">
@@ -39,16 +39,20 @@ export function FeaturesSection() {
           <img className="mb-5" src={reformingImage} alt="Reforming Image" />
         </li>
       </ul>
-      <div className="pt-[106px] flex">
+      <div className="pt-[106px] flex xl:pt-0">
         <section className="relative h-[600px]">
-          <img src={tractorImage} alt="Tractor Image" />
           <img
-            className=" absolute rounded-[100%] border-[15px] border-solid border-white -left-11 -bottom-11"
+            className="xl:w-full xl:min-w-[340px] md:hidden"
+            src={tractorImage}
+            alt="Tractor Image"
+          />
+          <img
+            className=" absolute rounded-[100%] border-[15px] border-solid border-white -left-11 -bottom-11 xl:hidden"
             src={plantImage}
             alt="Plant Image"
           />
         </section>
-        <article className="px-[60px] py-0;">
+        <article className="px-[60px] py-0 sm:px-[10px]">
           <p className="text-[#EEC044] text-[24px]">Our Introductions</p>
           <h2 className="text-[48px] leading-[60px] font-bold mb-[33px]">
             Agriculture & Organic Product Farm
@@ -62,7 +66,7 @@ export function FeaturesSection() {
             or random word which don’t look even.
           </p>
           <ul className="flex mb-[35px]">
-            <li className="flex items-center">
+            <li className="flex items-center sm:ml-[10px]">
               <img className="mr-2.5" src={fruitsImage} alt="Fruits Icon" />
               <h4 className="text-[20px] font-bold leading-[20px]">
                 Growing fruits vegetables

@@ -4,7 +4,7 @@ export function HeaderSection() {
   return (
     <section className="max-w-[1920px] w-full justify-center flex items-center">
       <img
-        className="max-w-[1920px] w-full relative"
+        className="max-w-[1920px] w-full relative sm:h-[312px] object-cover"
         src={headerMainImage}
         alt="Header Section Main Image"
       />
@@ -18,7 +18,7 @@ export function HeaderSection() {
           tellus,
           <br /> luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <button className="bg-[#4BAF47] font-bold w-fit mt-10 px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] md:mt-3 md:px-[25px] sm:w-full sm-mt-[25px]">
+        <button className="bg-[#4BAF47] font-bold w-fit mt-10 px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] md:mt-3 md:px-[25px] sm:w-full sm-mt-[2.75rem]">
           Discover More
         </button>
       </div>
