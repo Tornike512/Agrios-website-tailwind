@@ -2,7 +2,7 @@ import agricultureVideo from "src/assets/video.mp4";
 
 export function VideoSection() {
   return (
-    <section className="relative max-w-[1920px] mt-[60px] sm:px-[20px]">
+    <section className="relative max-w-[1920px] mt-[60px] sm:px-[20px] sm:mt-[120px]">
       <video
         className="max-w-[1920px] w-full sm:h-[400px] sm:object-cover sm:rounded-[20px]"
         src={agricultureVideo}
