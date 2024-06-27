@@ -8,7 +8,7 @@ export function HeaderSection() {
         src={headerMainImage}
         alt="Header Section Main Image"
       />
-      <div className="w-full max-w-[1200px] flex flex-col justify-end absolute text-[#ffffff] px-[20px] sm:items-center">
+      <div className="w-full max-w-[1200px]  flex flex-col justify-end absolute text-[#ffffff] px-[20px] sm:items-center">
         <p className="text-[16px] md:text-[12px]">WELCOME TO AGRIOS FARMING</p>
         <h1 className="text-[120px] leading-[120px] lg:leading-[64px] lg:text-[64px] md:text-[36px] md:leading-[40px]">
           Agriculture &<br /> Eco Farming
