@@ -18,7 +18,7 @@ export function HeaderSection() {
           tellus,
           <br /> luctus nec ullamcorper mattis, pulvinar dapibus leo.
         </p>
-        <button className="bg-[#4BAF47] font-bold w-fit mt-10 px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] md:mt-3 md:px-[25px] sm:w-full sm-mt-[2.75rem]">
+        <button className="bg-[#4BAF47] font-bold w-fit mt-10 px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] md:mt-3 md:px-[25px] sm:w-full sm:mt-[45px]">
           Discover More
         </button>
       </div>

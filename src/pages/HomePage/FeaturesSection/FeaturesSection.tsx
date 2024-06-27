@@ -9,7 +9,7 @@ import confirmIcon from "src/assets/confirm-icon.svg";
 
 export function FeaturesSection() {
   return (
-    <section className="relative w-[1240px] px-[40px] mt-[120px] xl:w-full">
+    <section className="relative w-[1240px] px-[40px] mt-[120px] xl:w-full sm:px-[20px]">
       <ul className="grid grid-cols-[400px_400px_400px] gap-x-[30px] absolute w-full z-[2] top-[-19%] right-[11px] xl:hidden ">
         <li className="bg-[#ffffff] text-center shadow-[-12px_0px_15px_#0000001f] rounded-[10px] flex flex-col items-center justify-center p-2.5">
           <p className="text-[20px] text-[#EEC044] py-[10px]">Feature 01</p>
@@ -66,7 +66,7 @@ export function FeaturesSection() {
             or random word which don’t look even.
           </p>
           <ul className="flex mb-[35px]">
-            <li className="flex items-center sm:ml-[10px]">
+            <li className="flex items-center sm:mr-[10px]">
               <img className="mr-2.5" src={fruitsImage} alt="Fruits Icon" />
               <h4 className="text-[20px] font-bold leading-[20px]">
                 Growing fruits vegetables
@@ -87,7 +87,7 @@ export function FeaturesSection() {
             <img className="mr-2.5" src={confirmIcon} alt="Confirm Image" />
             Making this the first true generator on the internet.
           </p>
-          <button className="text-[#ffffff] font-bold bg-[#4BAF47] w-fit mt-[5.5rem] px-[50px] py-4 rounded-[10px] hover:bg-[#54c950]">
+          <button className="text-[#ffffff] font-bold bg-[#4BAF47] w-fit mt-[5.5rem] px-[50px] py-4 rounded-[10px] hover:bg-[#54c950] sm:w-full sm:mt-[3.5rem]">
             Discover More
           </button>
         </article>
