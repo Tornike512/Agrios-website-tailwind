@@ -1,9 +1,13 @@
+import aboutImage from "/src/assets/about-page-main-image.svg";
+
 export function AboutSection() {
   return (
-    <figure>
-      <img src="" alt="About Image" />
-      <figcaption>HOME / ABOUT</figcaption>
-      <figcaption>About</figcaption>
+    <figure className="flex items-center justify-center">
+      <img
+        className="w-full max-w-[1920px]"
+        src={aboutImage}
+        alt="About Image"
+      />
     </figure>
   );
 }
