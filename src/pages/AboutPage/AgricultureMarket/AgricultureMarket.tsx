@@ -1,9 +1,13 @@
+import palmsImage from "/src/assets/palms-image.svg";
+import lightGreenCorrectIcon from "/src/assets/lightgreen-correct-icon.svg";
+import smillingPersonImage from "/src/assets/smilling-person-image.svg";
+
 export function AgricultureMarket() {
   return (
-    <section>
+    <section className="w-full max-w-[1200px] flex">
       <figure>
-        <img src="" alt="Palms Image" />
-        <img src="" alt="Smiling Person Image" />
+        <img src={palmsImage} alt="Palms Image" />
+        <img src={smillingPersonImage} alt="Smiling Person Image" />
       </figure>
       <aside>
         <h5>Get to Know Us</h5>
@@ -19,15 +23,15 @@ export function AgricultureMarket() {
         </p>
         <figure>
           <figcaption>
-            <img src="" alt="lightGreen Correct Icon" />
+            <img src={lightGreenCorrectIcon} alt="lightGreen Correct Icon" />
             Suspe ndisse suscipit sagittis leo
           </figcaption>
           <figcaption>
-            <img src="" alt="lightGreen Correct Icon" />
+            <img src={lightGreenCorrectIcon} alt="lightGreen Correct Icon" />
             Entum estibulum disgnissim posuere
           </figcaption>
           <figcaption>
-            <img src="" alt="lightGreen Correct Icon" />
+            <img src={lightGreenCorrectIcon} alt="lightGreen Correct Icon" />
             Lorem Ipsum on the tend to repeat
           </figcaption>
         </figure>

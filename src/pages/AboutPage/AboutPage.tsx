@@ -3,7 +3,7 @@ import { AgricultureMarket } from "./AgricultureMarket";
 
 export function AboutPage() {
   return (
-    <section>
+    <section className="w-full flex flex-col justify-center items-center">
       <AboutSection />
       <AgricultureMarket />
     </section>
