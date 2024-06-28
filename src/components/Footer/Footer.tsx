@@ -17,7 +17,7 @@ export function Footer() {
       <footer className="bg-[#24231D] flex justify-center py-[120px] px-[40px] lg:pl-[18%] sm:pl-[11%]">
         <div className="flex max-w-[1200px] w-full text-[#A5A49A] justify-between lg:block">
           <ul className="flex mr-[65px] lg:block">
-            <li className="max-w-[270px] w-full px-[10px] lg:max-w-fit lg:mb-[20px]">
+            <li className="max-w-[270px] w-full  lg:max-w-fit lg:mb-[20px]">
               <img
                 className="mb-[21px]"
                 src={blackAgriosLogo}
@@ -134,11 +134,11 @@ export function Footer() {
               </figcaption>
             </figure>
             <input
-              className="p-[10px] rounded-[10px]"
+              className="w-full p-[10px] rounded-[10px]"
               placeholder="Your Email Address"
               type="email"
             />
-            <button className="bg-[#4BAF47] p-[16px] absolute rounded-tr-[10px] rounded-br-[10px] hover:bg-[#54c950] right-[38px]">
+            <button className="bg-[#4BAF47] p-[16px] absolute rounded-tr-[10px] rounded-br-[10px] hover:bg-[#54c950] right-[-1px]">
               <img src={sendIcon} alt="Send Icon" />
             </button>
           </address>
