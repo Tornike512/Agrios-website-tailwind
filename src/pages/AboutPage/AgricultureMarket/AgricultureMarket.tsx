@@ -8,7 +8,7 @@ export function AgricultureMarket() {
       <figure className="relative">
         <img className="mr-[135px]" src={palmsImage} alt="Palms Image" />
         <img
-          className="absolute left-[-131px] rounded-[10px] bottom-[24px]"
+          className="absolute left-[-131px] rounded-[10px] bottom-[0px]"
           src={smillingPersonImage}
           alt="Smiling Person Image"
         />

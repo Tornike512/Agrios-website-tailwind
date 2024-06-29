@@ -22,7 +22,7 @@ export function VideoSection() {
         </p>
         <p className="flex justify-center">Experts Farmers</p>
       </div>
-      <h2 className="text-[#ffffff] top-[-22%] text-[70px] absolute text-center mx-auto inset-x-0 font-bold xl:top-[19%] xl:text-[48px] lg:text-[34px] md:text-[24px] sm:top-[35%]">
+      <h2 className="text-[#ffffff] top-[25%] text-[60px] absolute text-center mx-auto inset-x-0 font-bold xl:top-[19%] xl:text-[48px] lg:text-[34px] md:text-[24px] sm:top-[35%]">
         Agriculture Matters to the
         <br /> Future of
         <br /> Development
