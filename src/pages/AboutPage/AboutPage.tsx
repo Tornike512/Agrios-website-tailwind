@@ -1,6 +1,7 @@
 import { AboutSection } from "./AboutSection";
 import { AboutVideo } from "./AboutVideo";
 import { AgricultureMarket } from "./AgricultureMarket";
+import { WhatTheySaySection } from "./WhatTheySaySection";
 
 export function AboutPage() {
   return (
@@ -8,6 +9,7 @@ export function AboutPage() {
       <AboutSection />
       <AgricultureMarket />
       <AboutVideo />
+      <WhatTheySaySection />
     </section>
   );
 }

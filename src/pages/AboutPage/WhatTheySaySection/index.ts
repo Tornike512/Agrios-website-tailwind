@@ -1,0 +1,1 @@
+export { WhatTheySaySection } from "./WhatTheySaySection";
