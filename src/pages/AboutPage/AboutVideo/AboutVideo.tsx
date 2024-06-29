@@ -3,7 +3,7 @@ import ecoFriendlyVideo from "src/assets/eco-friendly-video.mp4";
 export function AboutVideo() {
   return (
     <section className="w-full max-w-[1920px] relative">
-      <h2 className="w-full text-[#ffffff] font-bold text-[60px] absolute bottom-2/4 text-center lg:text-[45px] md:text-[36px] md:bottom-[55%]">
+      <h2 className="w-full text-[#ffffff] font-bold text-[60px] absolute bottom-2/4 text-center lg:text-[45px] md:text-[36px] md:bottom-[55%] sm:text-[28px] sm:bottom-[63%]">
         ECO-Friendly Products can
         <br /> be Made from Scratch
       </h2>

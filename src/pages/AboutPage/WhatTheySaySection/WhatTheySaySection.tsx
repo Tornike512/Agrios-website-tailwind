@@ -12,39 +12,43 @@ export function WhatTheySaySection() {
           What They Say
         </h2>
         <div className="flex lg:block lg:px-[20px]">
-          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px] mr-[20px] lg:mb-[20px] lg:mr-[0]">
+          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px] mr-[20px] lg:mb-[20px] lg:mr-[0] sm:flex-col sm:items-center sm:justify-center">
             <img
-              className="w-[60%] mr-[10px] rounded-[10px] object-cover"
+              className="w-[60%] mr-[10px] rounded-[10px] object-cover sm:mb-[10px] sm:w-[55%]"
               src={maleImage}
               alt="Male Person Image"
             />
-            <figcaption className="text-[#878680] text-[22px] px-[20px] lg:flex lg:justify-between lg:flex-col lg:text-[28px] md:text-[20px]">
+            <figcaption className="text-[#878680] text-[22px] px-[20px] lg:flex lg:justify-between lg:flex-col lg:text-[28px] md:text-[20px] sm:text-center">
               There are many variations of passages available, but the majority
               have suffered alterations in some form by injected humor or
               randomness
               <div>
-                <h4 className="flex justify-end font-bold mt-[20px]">
+                <h4 className="flex justify-end font-bold mt-[20px] sm:justify-center">
                   Bonnie Tolbet
                 </h4>
-                <p className="flex justify-end text-[16px]">Customer</p>
+                <p className="flex justify-end text-[16px] sm:justify-center">
+                  Customer
+                </p>
               </div>
             </figcaption>
           </figure>
-          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px]">
+          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px] sm:flex-col sm:items-center sm:justify-center">
             <img
-              className="w-[60%] mr-[10px] rounded-[10px] object-cover"
+              className="w-[60%] mr-[10px] rounded-[10px] object-cover sm:mb-[20px] sm:w-[55%]"
               src={femaleImage}
               alt="Female Person Image"
             />
-            <figcaption className="text-[#878680] text-[22px] px-[20px] lg:flex lg:justify-between lg:flex-col lg:text-[28px] md:text-[20px]">
+            <figcaption className="text-[#878680] text-[22px] px-[20px] lg:flex lg:justify-between lg:flex-col lg:text-[28px] md:text-[20px] sm:text-center">
               There are many variations of passages available, but the majority
               have suffered alterations in some form by injected humor or
               randomness
               <div>
-                <h4 className="flex justify-end font-bold mt-[20px]">
+                <h4 className="flex justify-end font-bold mt-[20px] sm:justify-center">
                   Sarah Albert
                 </h4>
-                <p className="flex justify-end text-[16px]">Customer</p>
+                <p className="flex justify-end text-[16px] sm:justify-center">
+                  Customer
+                </p>
               </div>
             </figcaption>
           </figure>
