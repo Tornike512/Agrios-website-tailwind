@@ -1,6 +1,7 @@
 import { AboutSection } from "./AboutSection";
 import { AboutVideo } from "./AboutVideo";
 import { AgricultureMarket } from "./AgricultureMarket";
+import { OurFarmersSection } from "./OurFarmersSection";
 import { WhatTheySaySection } from "./WhatTheySaySection";
 
 export function AboutPage() {
@@ -10,6 +11,7 @@ export function AboutPage() {
       <AgricultureMarket />
       <AboutVideo />
       <WhatTheySaySection />
+      <OurFarmersSection />
     </section>
   );
 }
