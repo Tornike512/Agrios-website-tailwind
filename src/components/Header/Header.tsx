@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 import { Navigation } from "../Navigation";
+import { useNavigate } from "react-router-dom";
 
 import agriosLogo from "/src/assets/agrios-logo.svg";
 import emailIcon from "/src/assets/email-icon.svg";
@@ -12,12 +13,18 @@ import twitterLogo from "/src/assets/twitter-logo.svg";
 import menuIcon from "/src/assets/menu-icon.svg";
 
 export function Header() {
+  const navigate = useNavigate();
+
   const socialMedia = [
     { src: twitterLogo, alt: "Twitter Logo" },
     { src: facebookLogo, alt: "Facebook Logo" },
     { src: pinterestLogo, alt: "Pinterest Logo" },
     { src: instagramLogo, alt: "Instagram Logo" },
   ];
+
+  const handleHomeNavigation = () => {
+    navigate("/");
+  };
 
   const contactInfo = [
     {
@@ -45,7 +52,8 @@ export function Header() {
       <header className="w-full bg-#ffffff h-[115px] flex items-center justify-center">
         <section className="max-w-[1200px] w-full flex  items-center justify-between">
           <img
-            className="p-[20px] lg:pr-0 lg:w-[140px] lg:pl-[10px]"
+            onClick={handleHomeNavigation}
+            className="p-[20px] lg:pr-0 lg:w-[140px] lg:pl-[10px] cursor-pointer"
             src={agriosLogo}
             alt="Agrios Logo"
           />

@@ -1,9 +1,24 @@
 import { v4 as uuidv4 } from "uuid";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 import searchIcon from "/src/assets/search-icon.svg";
 import cartIcon from "/src/assets/cart-icon.svg";
 
 export function Navigation() {
+  const [navigation, setNavigation] = useState<string>("");
+
+  const navigate = useNavigate();
+
+  const handleNavigation = (page: string) => {
+    setNavigation(page);
+    if (navigation === page && page !== "Home") {
+      navigate(`/${page}`);
+    } else if (navigation === page && page === "Home") {
+      navigate("/");
+    }
+  };
+
   const headerNavigation = [
     { nav: "Home" },
     { nav: "About" },
@@ -23,7 +38,7 @@ export function Navigation() {
               <a
                 className="text-[#878680] text-base cursor-pointer hover:text-[#000000] md:mr-[40px]"
                 key={uuidv4()}
-                href="#"
+                onClick={() => handleNavigation(nav.nav)}
               >
                 {nav.nav}
               </a>
