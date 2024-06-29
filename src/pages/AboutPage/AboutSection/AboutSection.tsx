@@ -4,7 +4,7 @@ export function AboutSection() {
   return (
     <figure className="flex items-center justify-center mb-[120px]">
       <img
-        className="w-full max-w-[1920px]"
+        className="w-full max-w-[1920px] lg:h-[400px] lg:object-cover"
         src={aboutImage}
         alt="About Image"
       />
