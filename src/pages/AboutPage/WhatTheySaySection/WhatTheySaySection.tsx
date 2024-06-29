@@ -11,37 +11,41 @@ export function WhatTheySaySection() {
         <h2 className="flex justify-center text-[48px] mb-[50px] text-[#1F1E17] leading-[50px] font-bold sm:text-[36px]">
           What They Say
         </h2>
-        <div className="flex">
-          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px] mr-[20px]">
+        <div className="flex lg:block lg:px-[20px]">
+          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px] mr-[20px] lg:mb-[20px] lg:mr-[0]">
             <img
               className="w-[60%] mr-[10px] rounded-[10px] object-cover"
               src={maleImage}
               alt="Male Person Image"
             />
-            <figcaption className="text-[#878680] text-[22px] px-[20px]">
+            <figcaption className="text-[#878680] text-[22px] px-[20px] lg:flex lg:justify-between lg:flex-col lg:text-[28px] md:text-[20px]">
               There are many variations of passages available, but the majority
               have suffered alterations in some form by injected humor or
               randomness
-              <h4 className="flex justify-end font-bold mt-[20px]">
-                Bonnie Tolbet
-              </h4>
-              <p className="flex justify-end text-[16px]">Customer</p>
+              <div>
+                <h4 className="flex justify-end font-bold mt-[20px]">
+                  Bonnie Tolbet
+                </h4>
+                <p className="flex justify-end text-[16px]">Customer</p>
+              </div>
             </figcaption>
           </figure>
-          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px] mr-[20px]">
+          <figure className="flex bg-[#ffffff] p-[40px] rounded-[10px]">
             <img
               className="w-[60%] mr-[10px] rounded-[10px] object-cover"
               src={femaleImage}
               alt="Female Person Image"
             />
-            <figcaption className="text-[#878680] text-[22px] px-[20px]">
+            <figcaption className="text-[#878680] text-[22px] px-[20px] lg:flex lg:justify-between lg:flex-col lg:text-[28px] md:text-[20px]">
               There are many variations of passages available, but the majority
               have suffered alterations in some form by injected humor or
               randomness
-              <h4 className="flex justify-end font-bold mt-[20px]">
-                Sarah Albert
-              </h4>
-              <p className="flex justify-end text-[16px]">Customer</p>
+              <div>
+                <h4 className="flex justify-end font-bold mt-[20px]">
+                  Sarah Albert
+                </h4>
+                <p className="flex justify-end text-[16px]">Customer</p>
+              </div>
             </figcaption>
           </figure>
         </div>

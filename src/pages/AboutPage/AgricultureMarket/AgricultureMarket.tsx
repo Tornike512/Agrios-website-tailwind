@@ -12,7 +12,9 @@ export function AgricultureMarket() {
         />
       </figure>
       <aside>
-        <h5 className="text-[#EEC044] text-[24px]">Get to Know Us</h5>
+        <h5 className="text-[#EEC044] text-[24px] lg:flex lg:justify-center lg:items-center">
+          Get to Know Us
+        </h5>
         <h2 className="flex justify-center text-[48px] text-[#1F1E17] leading-[50px] font-bold mb-[30px] sm:text-[36px]">
           The Best Agriculture Market
         </h2>

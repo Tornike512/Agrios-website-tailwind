@@ -3,7 +3,7 @@ import ecoFriendlyVideo from "src/assets/eco-friendly-video.mp4";
 export function AboutVideo() {
   return (
     <section className="w-full max-w-[1920px] relative">
-      <h2 className="text-[#ffffff] font-bold text-[60px] absolute left-[30%] bottom-2/4 text-center">
+      <h2 className="w-full text-[#ffffff] font-bold text-[60px] absolute bottom-2/4 text-center lg:text-[45px] md:text-[36px] md:bottom-[55%]">
         ECO-Friendly Products can
         <br /> be Made from Scratch
       </h2>
@@ -14,7 +14,7 @@ export function AboutVideo() {
         autoPlay
         muted
       ></video>
-      <div className="bg-[#1F1E17] h-[184px] w-full grid grid-cols-[1fr_1fr_1fr_1fr]">
+      <div className="bg-[#1F1E17] h-[184px] w-full grid grid-cols-[1fr_1fr_1fr_1fr] lg:grid-cols-[1fr_1fr] sm:grid-cols-[1fr] sm:mb-[10px]">
         <p className="text-[#A5A49A] text-[18px] flex items-center justify-center">
           Agriculture Products
         </p>
