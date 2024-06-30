@@ -4,8 +4,8 @@ import hayImage from "src/assets/hay-image.svg";
 
 export function ServicesSection() {
   return (
-    <section className="w-full max-w-[1200px] mb-[120px] flex px-[40px] lg:block">
-      <aside className="bg-[#54c654] h-fit rounded-[10px] px-[50px] py-[30px] mr-[30px] flex flex-col justify-center text-center lg:mr-[0] lg:mb-[30px]">
+    <section className="w-full max-w-[1200px] mb-[120px] flex px-[40px] xl:block">
+      <aside className="bg-[#54c654] h-fit rounded-[10px] px-[50px] py-[30px] mr-[30px] flex flex-col justify-center text-center xl:mr-[0] xl:mb-[30px]">
         <h3 className="text-[#ffffff] text-[24px] font-bold mb-[33px]">
           Need Help?
         </h3>
@@ -16,7 +16,7 @@ export function ServicesSection() {
         <p className="text-[#ffffff] text-[24px] whitespace-nowrap">
           +92 (000) -9630
         </p>
-        <button className="mt-[33px] w-full text-[14px] bg-[#EEC044] font-bold px-[50px] py-4 rounded-[10px] hover:bg-[#FFD972] text-[#ffffff] whitespace-nowrap md:w-full ">
+        <button className="mt-[33px] w-full text-[14px] bg-[#EEC044] font-bold px-[50px] py-4 rounded-[10px] hover:bg-[#FFD972] text-[#ffffff] whitespace-nowrap md:w-full sm:px-[20px] ">
           Start Shopping Now
         </button>
       </aside>
@@ -26,7 +26,7 @@ export function ServicesSection() {
           src={farmingImage}
           alt="Agriculture field"
         />
-        <h2 className="text-[40px] font-bold mb-[20px] lg:flex lg:justify-center">
+        <h2 className="text-[40px] font-bold mb-[20px] lg:flex lg:justify-center lg:text-center">
           Agriculture Products
         </h2>
         <p className="text-[#878680] text-[16px] mb-[33px] lg:text-center">
@@ -47,7 +47,11 @@ export function ServicesSection() {
         </p>
         <div className="flex mb-[50px] lg:block">
           <figure className="px-[10px] mr-[30px] lg:mr-[0]">
-            <img className="mb-[14px] w-full" src={hayImage} alt="Hay bales" />
+            <img
+              className="mb-[14px] lg:w-full"
+              src={hayImage}
+              alt="Hay bales"
+            />
             <h3 className="text-[30px] font-bold mb-[10px] lg:flex lg:justify-center">
               Our Benefits
             </h3>
@@ -58,7 +62,7 @@ export function ServicesSection() {
           </figure>
           <figure className="px-[10px] mr-[30px] lg:mr-[0]">
             <img
-              className="mb-[14px] w-full"
+              className="mb-[14px] lg:w-full"
               src={tomatoFarmingImage}
               alt="Tomato farming"
             />
