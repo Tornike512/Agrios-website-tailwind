@@ -10,15 +10,6 @@ export function Navigation() {
 
   const navigate = useNavigate();
 
-  const handleNavigation = (page: string) => {
-    setNavigation(page);
-    if (navigation === page && page !== "Home") {
-      navigate(`/${page}`);
-    } else if (navigation === page && page === "Home") {
-      navigate("/");
-    }
-  };
-
   const headerNavigation = [
     { nav: "Home" },
     { nav: "About" },
@@ -29,6 +20,18 @@ export function Navigation() {
     { nav: "Contact" },
   ];
 
+  const handleNavigation = (page: string) => {
+    setNavigation(page);
+
+    if (page !== "Home") {
+      navigate(`/${page}`);
+    } else if (page === "Home") {
+      navigate("/");
+    }
+  };
+
+  console.log(navigation);
+
   return (
     <nav className="h-[80px] w-full bg-[#F4F4F3] flex items-center justify-center">
       <ul className="max-w-[1200px] w-full flex justify-between items-center md:justify-normal">
@@ -38,7 +41,9 @@ export function Navigation() {
               <a
                 className="text-[#878680] text-base cursor-pointer hover:text-[#000000] md:mr-[40px]"
                 key={uuidv4()}
-                onClick={() => handleNavigation(nav.nav)}
+                onClick={() => {
+                  handleNavigation(nav.nav);
+                }}
               >
                 {nav.nav}
               </a>

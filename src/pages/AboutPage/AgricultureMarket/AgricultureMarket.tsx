@@ -28,7 +28,7 @@ export function AgricultureMarket() {
           random word which don’t look even.
         </p>
         <figure className="mb-[33px]">
-          <figcaption className="flex font-bold text-[18px]">
+          <figcaption className="flex font-bold text-[18px] sm:items-start">
             <img
               className="mr-[8px]"
               src={lightGreenCorrectIcon}
@@ -36,7 +36,7 @@ export function AgricultureMarket() {
             />
             Suspe ndisse suscipit sagittis leo
           </figcaption>
-          <figcaption className="flex font-bold text-[18px]">
+          <figcaption className="flex font-bold text-[18px] sm:items-start">
             <img
               className="mr-[8px]"
               src={lightGreenCorrectIcon}
@@ -44,7 +44,7 @@ export function AgricultureMarket() {
             />
             Entum estibulum disgnissim posuere
           </figcaption>
-          <figcaption className="flex font-bold text-[18px]">
+          <figcaption className="flex font-bold text-[18px] sm:items-start">
             <img
               className="mr-[8px]"
               src={lightGreenCorrectIcon}

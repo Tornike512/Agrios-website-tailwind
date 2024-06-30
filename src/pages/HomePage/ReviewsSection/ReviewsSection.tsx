@@ -8,7 +8,7 @@ export function ReviewsSection() {
       <div className="flex justify-center max-w-[1200px] w-full lg:block">
         <section className="max-w-[308px] w-full mr-[30px] lg:w-full lg:max-w-fit text-center">
           <p className="text-[24px] text-[#EEC044]">Our Testimonials</p>
-          <h2 className="text-[48px] text-[#1F1E17] font-bold leading-[55px] mb-[30px]">
+          <h2 className="text-[48px] text-[#1F1E17] font-bold leading-[55px] mb-[30px] md:text-[36px]">
             What They're Saying About Agrios
           </h2>
           <p className="text-[16px] text-[#878680] mb-[43px]">

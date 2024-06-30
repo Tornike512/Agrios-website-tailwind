@@ -12,13 +12,13 @@ export function ChooseAgrios() {
         alt="Choose Agrios Section Main Image"
       />
       <figure>
-        <p className="text-[24px] text-[#EEC044] xl:text-cennter">
+        <p className="text-[24px] text-[#EEC044] xl:text-cennter xl:flex xl:justify-center">
           Our Farm Benefits
         </p>
-        <h2 className="text-[48px] text-[#1F1E17] font-bold leading-[55px] mb-[30px]">
+        <h2 className="text-[48px] text-[#1F1E17] font-bold leading-[55px] mb-[30px] xl:flex xl:justify-center xl:text-center sm:text-[36px]">
           Why Choose Agrios Market
         </h2>
-        <p className="text-[16px] text-[#878680] mb-[34px]">
+        <p className="text-[16px] text-[#878680] mb-[34px] xl:flex xl:justify-center xl:text-center">
           There are many variations of passages available, but the majority have
           suffered alteration in some form by injected humor or random words
           which don't look even.
