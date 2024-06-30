@@ -5,20 +5,28 @@ import hayImage from "src/assets/hay-image.svg";
 
 export function ServicesSection() {
   return (
-    <section className="mb-[120px] ">
-      <aside>
-        <h3>Need Help?</h3>
-        <p>
+    <section className="w-full max-w-[1200px] mb-[120px] flex">
+      <aside className="bg-[#54c654] h-fit rounded-[10px] px-[50px] py-[30px] mr-[30px] flex flex-col justify-center text-center">
+        <h3 className="text-[#ffffff] text-[24px] font-bold mb-[33px]">
+          Need Help?
+        </h3>
+        <p className="text-[#C3F5C1] text-[16px] mb-[15px]">
           Need assistance with filling out a form? Call our corporate office,
           and we will connect you with a team member for help.
         </p>
-        <p>+92 (000) -9630</p>
-        <button>Start Shopping Now</button>
+        <p className="text-[#ffffff] text-[24px] whitespace-nowrap">
+          +92 (000) -9630
+        </p>
+        <button className="mt-[33px] w-full text-[14px] bg-[#EEC044] font-bold px-[50px] py-4 rounded-[10px] hover:bg-[#FFD972] text-[#ffffff] md:w-full">
+          Start Shopping Now
+        </button>
       </aside>
       <article>
-        <img src={farmingImage} alt="Agriculture field" />
-        <h2>Agriculture Products</h2>
-        <p>
+        <img className="mb-[20px]" src={farmingImage} alt="Agriculture field" />
+        <h2 className="text-[40px] font-bold mb-[20px]">
+          Agriculture Products
+        </h2>
+        <p className="text-[#878680] text-[16px] mb-[33px]">
           Lorem ipsum is simply free text used by copy typing and refreshing.
           Neque porro est qui dolorem ipsum quia quaed inventore veritatis et
           quasi architecto beatae vitae dicta sunt explicabo. Aelltes port lacus
@@ -27,46 +35,56 @@ export function ServicesSection() {
           industry. Lorem Ipsum has been the industry standard dummy text ever
           since the 1500s.
         </p>
-        <p>
+        <p className="text-[#878680] text-[16px] mb-[33px]">
           It has survived not only five centuries. Lorem Ipsum is simply dummy
           text of the new design, printing, and type setting. When an unknown
           printer took a galley of type and scrambled it to make a type specimen
           book, it has survived not only five centuries but also the leap into
           electronic typesetting.
         </p>
-        <div>
-          <figure>
-            <img src={hayImage} alt="Hay bales" />
-            <h3>Our Benefits</h3>
-            <figcaption>
+        <div className="flex mb-[50px]">
+          <figure className="px-[10px] mr-[30px]">
+            <img className="mb-[14px]" src={hayImage} alt="Hay bales" />
+            <h3 className="text-[30px] font-bold mb-[10px]">Our Benefits</h3>
+            <figcaption className="text-[#878680] text-[16px] ">
               It has survived not only five centuries. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum.
             </figcaption>
           </figure>
-          <figure>
-            <img src={tomatoFarmingImage} alt="Tomato farming" />
-            <figcaption>
+          <figure className="px-[10px] mr-[30px]">
+            <img
+              className="mb-[14px]"
+              src={tomatoFarmingImage}
+              alt="Tomato farming"
+            />
+            <figcaption className="text-[16px] font-bold leading-[38px]">
               Nsectetur cing elit. Suspendisse suscipit sagittis leo. Entum
               estibulum dignissim posuere. Lorem Ipsum on the tend to repeat.
             </figcaption>
           </figure>
         </div>
-        <div>
-          <h2>World’s Hottest Destinations for Vegans</h2>
-          <img src={greenSquareImage} alt="Green Square Image" />
+        <div className="bg-[#F8F7F0] flex justify-between items-center p-[20px] rounded-[10px] mb-[10px] cursor-pointer">
+          <h2 className="text-[20px] font-bold">
+            World’s Hottest Destinations for Vegans
+          </h2>
+          <div className="bg-[#C5CE38] rounded-[10px] h-[60px] w-[60px]"></div>
         </div>
-        <div>
-          <h2>Let’s Grow Naturally and Live Naturally</h2>
-          <img src={greenSquareImage} alt="Green Square Image" />
+        <div className="bg-[#F8F7F0] flex justify-between items-center p-[20px] rounded-[10px] mb-[22px] cursor-pointer">
+          <h2 className="text-[20px] font-bold">
+            Let’s Grow Naturally and Live Naturally
+          </h2>
+          <div className="bg-[#C5CE38] rounded-[10px] h-[60px] w-[60px]"></div>
         </div>
-        <p>
+        <p className="text-[#878680] text-[16px] pl-[50px] mb-[22px]">
           Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
           leo ligula, molestie ullamcorper vulputate, vitae sodales commodo
           nisl. Nulla facilisi. Pellentesque est metus, condimentum vitae.
         </p>
-        <div>
-          <h2>Best Vegetables for Your Healthy Hair</h2>
-          <img src={greenSquareImage} alt="Green Square Image" />
+        <div className="bg-[#F8F7F0] flex justify-between items-center p-[20px] rounded-[10px] mb-[22px] cursor-pointer">
+          <h2 className="text-[20px] font-bold">
+            Best Vegetables for Your Healthy Hair
+          </h2>
+          <div className="bg-[#C5CE38] rounded-[10px] h-[60px] w-[60px]"></div>
         </div>
       </article>
     </section>
