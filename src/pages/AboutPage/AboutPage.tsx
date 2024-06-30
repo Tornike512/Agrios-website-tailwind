@@ -6,13 +6,13 @@ import { WhatTheySaySection } from "./WhatTheySaySection";
 
 export function AboutPage() {
   return (
-    <section className="w-full flex flex-col justify-center items-center">
+    <main className="w-full flex flex-col justify-center items-center">
       <AboutSection />
       <AgricultureMarket />
       <AboutVideo />
       <WhatTheySaySection />
       <OurFarmersSection />
-    </section>
+    </main>
   );
 }
 

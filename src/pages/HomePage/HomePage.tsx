@@ -9,7 +9,7 @@ import { NewsSection } from "./NewsSection";
 
 export function HomePage() {
   return (
-    <div className="w-full flex flex-col justify-center items-center">
+    <main className="w-full flex flex-col justify-center items-center">
       <HeaderSection />
       <FeaturesSection />
       <OfferSection />
@@ -18,7 +18,7 @@ export function HomePage() {
       <ReviewsSection />
       <ChooseAgrios />
       <NewsSection />
-    </div>
+    </main>
   );
 }
 
