@@ -1,6 +1,11 @@
+import farmingImage from "src/assets/farming-image.svg";
+import greenSquareImage from "src/assets/green-square-image.svg";
+import tomatoFarmingImage from "src/assets/tomato-farming-image.svg";
+import hayImage from "src/assets/hay-image.svg";
+
 export function ServicesSection() {
   return (
-    <section className="mb-[120px]">
+    <section className="mb-[120px] ">
       <aside>
         <h3>Need Help?</h3>
         <p>
@@ -9,10 +14,9 @@ export function ServicesSection() {
         </p>
         <p>+92 (000) -9630</p>
         <button>Start Shopping Now</button>
-        <img src="" alt="Background related to customer service" />
       </aside>
       <article>
-        <img src="" alt="Agriculture field" />
+        <img src={farmingImage} alt="Agriculture field" />
         <h2>Agriculture Products</h2>
         <p>
           Lorem ipsum is simply free text used by copy typing and refreshing.
@@ -32,7 +36,7 @@ export function ServicesSection() {
         </p>
         <div>
           <figure>
-            <img src="" alt="Hay bales" />
+            <img src={hayImage} alt="Hay bales" />
             <h3>Our Benefits</h3>
             <figcaption>
               It has survived not only five centuries. Duis aute irure dolor in
@@ -40,7 +44,7 @@ export function ServicesSection() {
             </figcaption>
           </figure>
           <figure>
-            <img src="" alt="Tomato farming" />
+            <img src={tomatoFarmingImage} alt="Tomato farming" />
             <figcaption>
               Nsectetur cing elit. Suspendisse suscipit sagittis leo. Entum
               estibulum dignissim posuere. Lorem Ipsum on the tend to repeat.
@@ -49,11 +53,11 @@ export function ServicesSection() {
         </div>
         <div>
           <h2>World’s Hottest Destinations for Vegans</h2>
-          <img src="" alt="A vibrant green field" />
+          <img src={greenSquareImage} alt="Green Square Image" />
         </div>
         <div>
           <h2>Let’s Grow Naturally and Live Naturally</h2>
-          <img src="" alt="Green plants" />
+          <img src={greenSquareImage} alt="Green Square Image" />
         </div>
         <p>
           Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum
@@ -62,7 +66,7 @@ export function ServicesSection() {
         </p>
         <div>
           <h2>Best Vegetables for Your Healthy Hair</h2>
-          <img src="" alt="A variety of vegetables" />
+          <img src={greenSquareImage} alt="Green Square Image" />
         </div>
       </article>
     </section>
