@@ -2,7 +2,7 @@ import agricultureHarvesting from "src/assets/agriculture-harvesting.svg";
 import easyHarvesting from "src/assets/easy-harvesting.svg";
 import ecologicalFarming from "src/assets/ecological-farming.svg";
 import freshProducts from "src/assets/fresh-products.svg";
-import healthyFood from "src/assets/healthy-hood.svg";
+import healthyFood from "src/assets/healthyfood.svg";
 import organicSolutions from "src/assets/organic-solutions.svg";
 
 export function ProjectsGrid() {
