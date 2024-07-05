@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
+import { TProject } from "src/types/Types";
 
 import axios from "axios";
 
 export default function useGetProjects({}: {}) {
-  const [projects, setProjects] = useState<[]>([]);
+  const [projects, setProjects] = useState<TProject[]>([]);
 
   async function getProjects() {
     try {

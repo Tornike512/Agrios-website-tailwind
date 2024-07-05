@@ -1,6 +1,7 @@
 import useGetProjects from "src/hooks/projectsApi";
 
 export function ProjectsNav() {
+  const projects = useGetProjects({ projects });
   return (
     <section>
       <img src="" alt="Main Image" />
