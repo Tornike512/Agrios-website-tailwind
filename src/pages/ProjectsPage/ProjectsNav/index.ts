@@ -1,1 +1,1 @@
-export ProjectsNav from "./ProjectsNav";
+export { ProjectsNav } from "./ProjectsNav";
