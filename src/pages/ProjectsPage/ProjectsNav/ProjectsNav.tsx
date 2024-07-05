@@ -1,3 +1,5 @@
+import useGetProjects from "src/hooks/projectsApi";
+
 export function ProjectsNav() {
   return (
     <section>
