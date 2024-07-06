@@ -15,6 +15,7 @@ export function ProjectsGrid() {
   const handleProjectName = (projectName: string) => {
     setProjectName(projectName);
     setShowProject(true);
+    window.scrollTo(0, 0);
   };
 
   return (
@@ -42,7 +43,7 @@ export function ProjectsGrid() {
           <img
             className="cursor-pointer w-full"
             src={freshProducts}
-            onClick={() => handleProjectName("freshProduct")}
+            onClick={() => handleProjectName("freshProducts")}
             alt="Fresh Products Image"
           />
           <img

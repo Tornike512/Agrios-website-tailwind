@@ -13,7 +13,7 @@ export default function useGetProjects({
   async function getProjects() {
     try {
       const response = await axios.get(
-        `http://localhost:5000/projects/${projectName}`
+        `https://agrios-backend.onrender.com/projects/${projectName}`
       );
       setProjects(response.data);
     } catch (error) {
