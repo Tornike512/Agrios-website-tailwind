@@ -1,7 +1,7 @@
 import useGetProjects from "src/hooks/projectsApi";
 
-export function ProjectsNav() {
-  const projects = useGetProjects();
+export function ProjectsNav({ projectName }: { projectName: string }) {
+  const projects = useGetProjects({ projectName });
 
   return (
     <>
@@ -12,7 +12,7 @@ export function ProjectsNav() {
             key={project.id}
           >
             <img
-              className="mb-[40px] w-full"
+              className="mb-[40px] w-full object-cover rounded-[10px]"
               src={project.image}
               alt="Main Image"
             />
