@@ -1,4 +1,8 @@
+import useGetProducts from "src/hooks/useGetProducts";
+
 export function ShopSection() {
+  const products = useGetProducts();
+
   return (
     <section className="w-full max-w-[1200px] mb-[120px] flex px-[40px]">
       <form className="mr-[30px]">
@@ -32,69 +36,23 @@ export function ShopSection() {
           </select>
         </section>
         <section className="grid grid-cols-[1fr_1fr_1fr] gap-x-[30px] gap-y-[30px]">
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
-          <div>
-            <figure className="w-[270px] h-[270px] bg-[#EFEFEF] rounded-[10px]">
-              <img src="" alt="Plant Image" />
-            </figure>
-            <h3 className="font-bold text-[22px]">Apple</h3>
-            <p className="text-[16px] text-[#4BAF47] font-bold">$50.00</p>
-          </div>
+          {products.products.map((product) => {
+            return (
+              <div key={product.id}>
+                <figure className="w-[270px] h-fit bg-[#EFEFEF] rounded-[10px]">
+                  <img
+                    className="cursor-pointer"
+                    src={product.image}
+                    alt="Plant Image"
+                  />
+                </figure>
+                <h3 className="font-bold text-[22px]">{product.title}</h3>
+                <p className="text-[16px] text-[#4BAF47] font-bold">
+                  {product.price}
+                </p>
+              </div>
+            );
+          })}
         </section>
       </div>
     </section>
