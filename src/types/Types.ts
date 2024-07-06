@@ -9,3 +9,10 @@ export interface TProject {
   challenges: string;
   footerDescription: string;
 }
+
+export interface TProducts {
+  id: string;
+  image: string;
+  title: string;
+  price: string;
+}
