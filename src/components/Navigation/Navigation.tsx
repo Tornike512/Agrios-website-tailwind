@@ -15,7 +15,6 @@ export function Navigation() {
     { nav: "About" },
     { nav: "Services" },
     { nav: "Projects" },
-    { nav: "News" },
     { nav: "Shop" },
     { nav: "Contact" },
   ];
