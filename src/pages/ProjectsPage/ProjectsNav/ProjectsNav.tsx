@@ -1,4 +1,4 @@
-import useGetProjects from "src/hooks/projectsApi";
+import useGetProjects from "src/hooks/useGetProjects";
 
 export function ProjectsNav({ projectName }: { projectName: string }) {
   const projects = useGetProjects({ projectName });

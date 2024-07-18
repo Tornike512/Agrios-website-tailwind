@@ -8,7 +8,7 @@ export default function useGetProducts() {
   async function getProducts() {
     try {
       const response = await axios.get(
-        "http://localhost:5000/products/products"
+        "https://agrios-backend.onrender.com/products/products"
       );
       setProducts(response.data);
     } catch (error) {

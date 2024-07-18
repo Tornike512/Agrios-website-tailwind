@@ -15,6 +15,7 @@ export function ShopSection() {
           <input
             className="w-full h-[5px] appearance-none bg-[#EEC044] mb-[10px]"
             type="range"
+            value={0}
           />
           <span className="flex items-center justify-between">
             <p className="text-[#878680] text-[12px]">$20 - $100</p>
